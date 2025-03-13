@@ -1,0 +1,33 @@
+/* Main Content */
+
+  
+    section {
+        margin-bottom: 2em;
+    }
+
+    #blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .blog-card {
+        border: 1px solid #ddd;
+        padding: 1em;
+        margin-bottom: 1em;
+        border-radius: 5px;
+    }
+    
+    .blog-card h3 {
+        margin-bottom: 0.5em;
+    }
+    
+    .blog-card a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+    
+    .blog-card a:hover {
+        text-decoration: underline;
+    }
+

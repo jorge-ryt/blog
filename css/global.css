@@ -1,0 +1,53 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Header */
+  header {
+    background: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  header nav {
+    margin-bottom: 1em;
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+  }
+  
+  header nav a[aria-current="page"] {
+    text-decoration: underline;
+  }
+
+  /* Main */
+  main {
+    padding: 2em;
+    flex: 1;
+}
+    
+  /* Footer */
+  footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+  }
+  
