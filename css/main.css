@@ -33,7 +33,15 @@
 
     .blog-card > figure > img {
         max-width: 100%;
+        background-size: cover;
+        transition: opacity 0.5s ease;
     }
+
+    .blog-card > figure > img:hover {
+        opacity: 0.5;
+    }
+
+    
 
 
     @media (max-width: 600px) {
