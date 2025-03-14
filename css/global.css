@@ -17,9 +17,12 @@
   
   /* Header */
   header {
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
     background: #333;
     color: white;
-    padding: 1em;
+    padding: 0 1em;
     text-align: center;
   }
   
@@ -33,21 +36,32 @@
     margin: 0 1em;
   }
   
-  header nav a[aria-current="page"] {
+  header nav a:hover {
     text-decoration: underline;
   }
 
   /* Main */
   main {
+    width: 100vw;
+    height: 75vh;
+    max-height: 75vh;
     padding: 2em;
     flex: 1;
+    margin-top: 20vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
     
   /* Footer */
   footer {
+    width: 100vw;
+    height: 10vh;
     background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 1em;
+    padding: 0 1em;
     margin-top: 2em;
   }
   
