@@ -1,6 +1,9 @@
 /* Form */
 form {
-    max-width: 500px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0 auto;
     background: #f9f9f9;
     padding: 1em;
@@ -11,6 +14,7 @@ form {
   form label {
     display: block;
     margin: 0.5em 0 0.2em;
+    align-self: start;
   }
   
   form input, form textarea, form button {
@@ -22,6 +26,7 @@ form {
   }
   
   form button {
+    width: 30%;
     background: #007BFF;
     color: white;
     border: none;

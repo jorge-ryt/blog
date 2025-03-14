@@ -1,17 +1,19 @@
-main {
-    margin-top: 15vh;
+#mainBlog {
+    max-width: 1200px;
     padding: 0;
+    overflow-y: auto;
 }
 
-figure {
-    width: 100vw;
-    max-height: 30vh;
+.wallpaper > figure {
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
     overflow-y: hidden;
     position: relative;
 }
 
 figure > img {
-    width: 100vw;
+    width: 100%;
     background-size: contain;
 }
 
@@ -22,9 +24,26 @@ figcaption {
     padding-left: 2.5vw;
 }
 
-article {
+.article-blog {
     max-width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
     text-align: justify;
     padding: 0 2.5vw;
+    margin: 1rem 0;
+}
+
+.article-blog > figure {
+    width: 25%;
+    float: left;
+    margin-right:  1.5rem;
+}
+
+@media (max-width: 500px) {
+    .article-blog > p {
+        font-size: small;
+    }
+
+    .article-blog > figure {
+        width: 50%;
+    }
 }

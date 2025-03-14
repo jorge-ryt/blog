@@ -13,7 +13,7 @@ function loadComponent(id, file) {
         .then(data => {
             const container = document.getElementById(id);
             if (container) {
-                const tempArc = document.createElement('article');
+                const tempArc = document.createElement('section');
                 tempArc.innerHTML = data;
 
                 while (tempArc.firstChild) {
